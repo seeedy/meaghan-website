@@ -10,17 +10,44 @@ html, body {
     line-height: 1.25em;
 }
 
+
+/*************** HEADER ***************/
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
-    height: 40px;
+    height: 100px;
+    background: black;
+    color: white;
     width: 100%;
+
+}
+
+#header-outer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: black;
-    color: white;
+    align-content: space-between;
+    margin: 20px 7vw;
 }
+
+.header-fox {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#hamburger {
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+.fas.fa-bars {
+    color: white;
+    font-size: 36px;
+}
+
+
 
 h1 {
     line-height: 1.25em;
@@ -293,7 +320,7 @@ nav {
 
 /********************* FOOTER **************/
 footer {
-    position: relative;
+    position: absolute;
     height: 250px;
     width: 100%;
     display: flex;
@@ -358,4 +385,69 @@ footer {
     justify-content: center;
     align-items: flex-start;
     padding: 40px 30px 40px;
+}
+
+
+/****************** MODAL ******************/
+
+#modal-outer {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+#modal-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    color: #f7f7f7;
+    margin: auto 7vw;
+    padding-top: 20px;
+}
+
+#nav-x i {
+    font-size: 2rem;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.nav-header i {
+    font-size: 24px;
+    color: inherit;
+    height: 80px;
+}
+
+.nav-main {
+}
+
+.nav-divider {
+    background: #f7f7f7;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    color: #34d5ac;
+    padding: 10px 5px;
+}
+
+.nav-social-logo i {
+    margin-right: 60px;
+    color: #34d5ac;
+    font-size: 1.75em;
+}
+
+.hidden {
+    transform: translateX(1000px);
 }

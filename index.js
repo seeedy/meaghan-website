@@ -10,8 +10,15 @@ app.set('view engine', 'handlebars');
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('home', {nav: false});
 });
+
+app.get('/nav', function (req, res) {
+    res.render('home', {nav: true});
+});
+
+
+
 
 app.listen(8080);
 console.log('listening...');
