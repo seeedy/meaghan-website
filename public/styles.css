@@ -40,6 +40,7 @@ header {
     float: right;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .fas.fa-bars {
@@ -402,7 +403,6 @@ footer {
 #modal-inner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     height: 100%;
     color: #f7f7f7;
     margin: auto 7vw;
@@ -411,6 +411,17 @@ footer {
 
 #nav-x i {
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+
+.nav-main a:hover {
+    color: #34d5ac;
 }
 
 .nav-header {
@@ -449,5 +460,5 @@ footer {
 }
 
 .hidden {
-    transform: translateX(1000px);
+    transform: translateX(10000px);
 }
