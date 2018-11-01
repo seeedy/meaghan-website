@@ -8,47 +8,8 @@ html, body {
     font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25em;
+    overflow-x: hidden;
 }
-
-
-/*************** HEADER ***************/
-header {
-    position: absolute;
-    top: 0;
-    height: 100px;
-    background: black;
-    color: white;
-    width: 100%;
-
-}
-
-#header-outer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    margin: 20px 7vw;
-}
-
-.header-fox {
-    float: left;
-    height: 40px;
-    width: 40px;
-}
-
-#hamburger {
-    float: right;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.fas.fa-bars {
-    color: white;
-    font-size: 36px;
-}
-
-
 
 h1 {
     line-height: 1.25em;
@@ -79,7 +40,6 @@ nav {
 
 #scroll-box {
     display: block;
-    /* height: 1200px; */
 }
 
 .hidden {
@@ -294,7 +254,6 @@ nav {
     transform: translateY(-140px);
 }
 
-
 .work-ornament-1 {
     width: 160px;
     height: 3px;
@@ -337,7 +296,7 @@ nav {
     height: 4px;
     width: 60px;
     background: #34d5ac;
-    margin-left: 24px;
+    margin: 0 24px 20px;
 }
 
 #partners-logos {
@@ -349,6 +308,168 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/**************** CONTACT ********************/
+#contact {
+    height: 130vh;
+    background: #f7f7f7;
+    color: #000;
+}
+
+#contact-headline {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-ornament {
+    height: 60px;
+    transform: translateY(-24px);
+}
+
+.contact-ornament-1 {
+    width: 160px;
+    height: 3px;
+    background: #34d5ac;
+    margin: 0 12px 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+    border: 1px dotted yellow;
+}
+
+.contact-input {
+    padding: 30px 2vw;
+}
+
+.contact-input label {
+    display: block;
+    text-align: left;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.contact-input input {
+    display: block;
+    width: 360px;
+    padding: 8px 12px;
+    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.contact-input input:focus {
+    border: 2px solid #34d5ac;
+}
+
+.msg-input {
+    width: 100%;
+    padding: 30px 2vw;
+}
+
+.msg-input label {
+    display: block;
+    text-align: left;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.msg-input textarea {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 12px 12px;
+    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
+    font-weight: bold;
+    resize: none;
+}
+
+.msg-input textarea:focus {
+    border: 2px solid #34d5ac;
+}
+
+.form-btn-box {
+    padding-top: 40px;
+    width: 100%;
+}
+
+#submit-btn {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background: #34d5ac;
+    color: #f7f7f7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#submit-btn p {
+    float: left;
+    padding: 2px 0 0 66px;
+    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.fa-paper-plane {
+    float: right;
+    color: white !important;
+}
+
+
+
+/*************** HEADER ***************/
+header {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    background: black;
+    color: white;
+    width: 100%;
+
+}
+
+#header-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 20px 7vw;
+}
+
+.header-fox {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#hamburger {
+    float: right;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.fas.fa-bars {
+    color: white;
+    font-size: 36px;
+}
+
+.fox-logo {
+    height: 100px;
 }
 
 /********************* FOOTER **************/
