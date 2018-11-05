@@ -161,29 +161,29 @@
         </div>
             <div id="contact-box">
 
-                <form id="contact-form" action="/" method="POST">
+                <form id="contact-form" action="https://formspree.io/chrstn.sdntp@gmail.com" method="POST">
                     <div class="contact-input">
                         <label for="name"><h3>Name:</h3></label>
-                        <input type="text" name="name" placeholder="REQUIRED">
+                        <input type="text" name="name" required placeholder="REQUIRED">
                     </div>
                     <div class="contact-input">
                         <label for="email"><h3>Email:</h3></label>
-                        <input type="text" name="email" placeholder="REQUIRED">
+                        <input type="text" name="_replyto" required placeholder="REQUIRED">
                     </div>
                     <div class="contact-input">
                         <label for="company"><h3>Company name:</h3></label>
-                        <input type="text" name="company" placeholder="REQUIRED">
+                        <input type="text" name="company" required placeholder="REQUIRED">
                     </div>
                     <div class="contact-input">
                         <label for="phone"><h3>Telephone number:</h3></label>
-                        <input type="text" name="phone" placeholder="REQUIRED">
+                        <input type="text" name="phone" required placeholder="REQUIRED">
                     </div>
                     <div class="msg-input">
                         <label for="msg"><h3>Other details:</h3></label>
-                        <textarea name="msg" placeholder="TYPE YOUR MESSAGE HERE"></textarea>
+                        <textarea name="msg" required placeholder="TYPE YOUR MESSAGE HERE"></textarea>
                     </div>
                     <div class="form-btn-box">
-                        <button id="submit-btn" type="submit" name="button">
+                        <button id="submit-btn" type="submit" value="send">
                             <p>send</p>
                             <i class="fas fa-paper-plane"></i>
                         </button>
