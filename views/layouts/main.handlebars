@@ -6,11 +6,19 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
         <title>Meaghan Johnson</title>
+        <style>
+			body { margin: 0; }
+			canvas { }
+		</style>
     </head>
 
 
 <body>
+
+    <canvas id="canvas"></canvas>
     {{>nav }}
 
     {{>header }}
@@ -20,6 +28,9 @@
     {{>footer }}
 
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.js"></script>
+<script src="/js/WebGL.js"></script>
+<script src="3d.js"></script>
 
 </body>
 </html>
