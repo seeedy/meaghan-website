@@ -108,10 +108,10 @@ function render() {
 		var object = scene.children[i];
 		if ( object.isLine ) {
 			object.rotation.y = time * ( i % 2 ? ( i + 1 ) : - ( i + 1 ) );
-			if ( i < 2 ) {
-				var scale = object.userData.originalScale * ( i / 5 + 1 ) * ( 1.25 + 0.5 * Math.sin( 6.5 * time ) );
-				object.scale.x = object.scale.y = object.scale.z = scale;
-			}
+			// if ( i < 2 ) {
+			// 	var scale = object.userData.originalScale * ( i / 5 + 1 ) * ( 1.25 + 0.5 * Math.sin( 6.5 * time ) );
+			// 	object.scale.x = object.scale.y = object.scale.z = scale;
+			// }
 		}
 	}
 }
