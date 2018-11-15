@@ -18,6 +18,11 @@ canvas {
   z-index: -99;
 }
 
+#container {
+    z-index: -99;
+}
+
+
 h1 {
     line-height: 1.25em;
     text-transform: uppercase;
@@ -55,13 +60,15 @@ nav {
 
 
 .one-page {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* border: 2px dotted pink; */
+    padding: 20px 0;
+    border: 2px dotted pink;
 }
 
 .one-page:nth-child(2n+1) {
@@ -76,7 +83,16 @@ nav {
 /****************** HOME ***************************/
 #home {
     background: transparent;
+    color: white;
 }
+
+#home h1 {
+    font-size: 98px;
+}
+#home h2 {
+    padding: 20px;
+}
+
 #home-ornament-1 {
     height: 4px;
     width: 210px;
@@ -104,8 +120,16 @@ nav {
     padding: 0 5vw;
 }
 
+#about-1 h2 {
+    /* column-count: 2; */
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
 #about-2 {
-    padding: 30px 20%;
+    padding: 30px 16%;
+    font-weight: bold;
 }
 
 #about-logo {
@@ -232,7 +256,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -282,8 +306,8 @@ nav {
 #partners {
     display: flex;
     flex-direction: column;
-    background: #f7f7f7;
-    color: #000;
+    background: black;
+    color: white;
 }
 
 #partners-text {
@@ -306,6 +330,7 @@ nav {
     margin-left: -450px;
     transform: translateY(-150px);
 }
+
 .partners-ornament-1 {
     height: 3px;
     width: 60px;
@@ -315,18 +340,23 @@ nav {
 
 #partners-logos {
     position: relative;
-    height: 300px;
+    height: 100%;
     width: 100%;
     background: #000;
     color: dimgrey;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .partner-logo {
     padding: 0 30px;
+}
+
+.partner-logo-img {
+    height: 120px;
 }
 
 /***************** BLOG **********************/
@@ -345,7 +375,7 @@ nav {
 
 /**************** CONTACT ********************/
 #contact {
-    height: 130vh;
+    min-height: 130vh;
     background: #f7f7f7;
     color: #000;
 }
@@ -399,7 +429,7 @@ nav {
 
 .contact-input input {
     display: block;
-    width: 360px;
+    width: 33vw;
     padding: 8px 12px;
     font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
     font-weight: bold;
@@ -525,9 +555,14 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
-    border-bottom: 1px solid dimgrey;
-    margin: 0 60px;
     padding: 40px 30px 40px;
+}
+
+#divider {
+    height: 1px;
+    width: 80%;
+    background: dimgrey;
+    align-self: center;
 }
 
 .contact-detail {
@@ -544,6 +579,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    margin: 10px auto;
     flex-grow: 1;
 }
 
@@ -580,9 +616,9 @@ footer {
 #modal-outer {
     position: fixed;
     top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+    background: black;
     z-index: 100;
 }
 
@@ -607,6 +643,7 @@ footer {
 .nav-main a {
     text-decoration: none;
     color: #f7f7f7;
+    align-content: flex-end;
 }
 
 

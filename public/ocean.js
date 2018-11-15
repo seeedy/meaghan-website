@@ -16,7 +16,7 @@ if ( WEBGL.isWebGLAvailable() === false ) {
 			//
 			scene = new THREE.Scene();
 			//
-			camera = new THREE.PerspectiveCamera( 55, window.innerWidth / window.innerHeight, 1, 20000 );
+			camera = new THREE.PerspectiveCamera( 66, window.innerWidth / window.innerHeight, 1, 20000 );
 			camera.position.set( 30, 30, 100 );
 			//
 			light = new THREE.DirectionalLight( 0xffffff, 0.8 );
@@ -69,7 +69,7 @@ if ( WEBGL.isWebGLAvailable() === false ) {
 				// cubeCamera.update( renderer, scene );
 			}
 			updateSun();
-			//
+			// Bouncing Ball
 			var geometry = new THREE.IcosahedronBufferGeometry( 20, 1 );
 			var count = geometry.attributes.position.count;
 			var colors = [];
@@ -89,7 +89,8 @@ if ( WEBGL.isWebGLAvailable() === false ) {
 				side: THREE.DoubleSide
 			} );
 			sphere = new THREE.Mesh( geometry, material );
-			scene.add( sphere );
+			// scene.add( sphere );
+
 			//
 			controls = new THREE.OrbitControls( camera, renderer.domElement );
 			controls.maxPolarAngle = Math.PI * 0.495;

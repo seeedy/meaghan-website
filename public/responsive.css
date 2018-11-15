@@ -1,0 +1,110 @@
+@media only screen and (max-width: 1025px) {
+    #home {
+        background: black;
+    }
+
+    #container {
+        display: none;
+    }
+
+    .one-page {
+        max-height: 160vh;
+    }
+    #contact {
+        padding: 60px 0;
+    }
+
+    #contact-form {
+        justify-content: center;
+    }
+
+    .contact-input input {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .one-page {
+        max-height: 220vh;
+    }
+
+    .work-box {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    #principles {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .one-page {
+        max-height: 250vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #home h1 {
+        font-size: 72px;
+    }
+
+    #home h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 471px) {
+    .one-page {
+        max-height: 280vh;
+    }
+
+    .about-ornament-1,
+    .about-ornament-2 {
+        width: 120px;
+    }
+
+    .work-ornament-1 {
+        width: 120px;
+    }
+
+    .work-ornament {
+        margin-left: 82px;
+    }
+
+    .contact-ornament-1 {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .one-page {
+        max-height: 340vh;
+    }
+
+    #home h1 {
+        font-size: 60px;
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+    }
+    .about-ornament-1,
+    .about-ornament-2 {
+        width: 90px;
+    }
+
+    .work-ornament-1 {
+        width: 90px;
+    }
+
+    .work-ornament {
+        margin-left: 53px;
+    }
+
+    .contact-ornament-1 {
+        width: 90px;
+    }
+}

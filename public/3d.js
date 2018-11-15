@@ -1,5 +1,7 @@
 console.log('threejs running');
 
+if (window.matchMedia("(min-width:1026px)").matches) {
+
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
 var r = 750;
@@ -114,4 +116,5 @@ function render() {
 			// }
 		}
 	}
+}
 }
