@@ -27,7 +27,7 @@ h1 {
     line-height: 1.25em;
     text-transform: uppercase;
     font-size: 44px;
-    font-family: "Barlow Condensed", "Roboto", Arial, sans-serif;
+    font-family: "Barlow Condensed", "Roboto", Arial, sans-serif !important;
     letter-spacing: 2px;
 }
 
@@ -35,7 +35,7 @@ h2 {
     line-height: 1.5em;
     text-transform: uppercase;
     font-size: 2rem;
-    font-family: "Barlow Condensed", "Roboto", "Arial", sans-serif;
+    font-family: "Barlow Condensed", "Roboto", "Arial", sans-serif !important;
 }
 
 h3 {
