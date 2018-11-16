@@ -22,11 +22,6 @@
     .contact-input input {
         width: 80vw;
     }
-
-    .work-ornament {
-        display: none;
-    }
-
 }
 
 @media only screen and (max-width: 820px) {
@@ -37,7 +32,6 @@
     .work-box {
         width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 660px) {
@@ -67,20 +61,10 @@
         max-height: 340vh;
     }
 
-    .about-ornament-1,
-    .about-ornament-2 {
-        width: 120px;
-    }
-
-    .work-ornament-1 {
-        width: 120px;
-    }
-
-    .work-ornament {
-        margin-left: 82px;
-    }
-
-    .contact-ornament-1 {
+    .about-line,
+    .work-line,
+    .blog-line,
+    .contact-line {
         width: 120px;
     }
 }
@@ -97,20 +81,10 @@
     #home h2 {
         font-size: 1.5rem;
     }
-    .about-ornament-1,
-    .about-ornament-2 {
-        width: 90px;
-    }
-
-    .work-ornament-1 {
-        width: 90px;
-    }
-
-    .work-ornament {
-        margin-left: 53px;
-    }
-
-    .contact-ornament-1 {
+    .about-line,
+    .work-line,
+    .contact-line,
+    .blog-line {
         width: 90px;
     }
 }
