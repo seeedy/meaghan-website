@@ -118,7 +118,7 @@ header {
 }
 
 .nav-main {
-    padding: 1.5em 1em;
+    padding: 1em 1em;
 }
 .nav-main a {
     text-decoration: none;
@@ -428,7 +428,8 @@ footer {
     align-content: center;
     padding: 10px 2em;
 }
-.fas {
+.fa-phone,
+.fa-envelope {
     color: #34d5ac;
     font-size: 1.5em;
     padding-right: 10px;
