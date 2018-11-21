@@ -37,14 +37,14 @@ h3 {
 }
 
 .one-page {
-    min-height: 100vh;
+    min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    min-height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px 0;
-    border: 2px dotted pink;
 }
 .one-page:nth-child(2n+1) {
     background: #000;
