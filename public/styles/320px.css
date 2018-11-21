@@ -37,8 +37,7 @@ h3 {
 }
 
 .one-page {
-    min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +148,9 @@ header {
 }
 
 /****************** HOME ***************************/
+#home {
+    padding: 100px 0 0;
+}
 #home h2 {
     padding: 12px;
 }
@@ -174,7 +176,7 @@ header {
 
 /*************** ABOUT ***************************/
 #about {
-    padding: 0 1em;
+    padding: 0 1em 3em;
 }
 #about-1 h2 {
     margin-bottom: 20px;
@@ -286,7 +288,7 @@ header {
     padding: 2em 0;
 }
 .partner-logo {
-    padding: 0 30px;
+    padding: 1em 30px;
 }
 .partner-logo-img {
     width: 90%;
@@ -312,6 +314,7 @@ header {
 #contact {
     background: #f7f7f7;
     color: #000;
+    padding-bottom: 3em;
 }
 
 #contact-logo {
@@ -401,7 +404,6 @@ footer {
     justify-content: center;
     background: black;
     color: white;
-    border: 1px dotted gold;
 }
 
 #contact-1 {
