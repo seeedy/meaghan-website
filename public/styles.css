@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-
+    /* debugging */
     /* background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important; */
@@ -388,7 +388,6 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 #contact-logo {
