@@ -289,14 +289,22 @@ header {
     align-items: center;
     padding: 2em 0;
 }
-.partner-logo {
-    padding: 1em 30px;
-}
 .partner-logo-img {
+    width: 60%;
+}
+.partner-logo-ftm {
     width: 90%;
 }
 .partner-logo-xyz {
     width: 50%;
+}
+.partner-logo-pacemakers {
+    width: 85%;
+    padding: 2em 0;
+}
+.partner-logo-elsewhen {
+    width: 80%;
+    padding: 3em 0;
 }
 
 /***************** BLOG **********************/
@@ -463,6 +471,6 @@ footer {
 }
 
 #contact-2 {
-    padding: 20px 2em;
+    padding: 20px 5em;
     text-align: center;
 }

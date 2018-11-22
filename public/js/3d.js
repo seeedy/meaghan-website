@@ -1,6 +1,6 @@
 console.log('threejs running');
 
-if (window.matchMedia("(min-width:1026px)").matches) {
+if (window.matchMedia("(min-width:1200px)").matches) {
 
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
@@ -16,7 +16,7 @@ init();
 animate();
 function init() {
 	camera = new THREE.PerspectiveCamera( 80, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 3000 );
-	camera.position.z = 1000;
+	camera.position.z = 1300;
 	scene = new THREE.Scene();
 	var i, line, material, p;
 	var parameters = [[ 0.5, 0x34d5ac, 0.25 ], [ 0.75, 0xf7f7f7, 0.5 ], [ 1, 0x42c2f4, 0.5 ]];
@@ -102,7 +102,7 @@ function animate() {
 	render();
 }
 function render() {
-	camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
+	camera.position.y += ( - mouseY + 800 - camera.position.y ) * .05;
 	camera.lookAt( scene.position );
 	renderer.render( scene, camera );
 	var time = Date.now() * 0.00005;

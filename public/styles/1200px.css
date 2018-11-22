@@ -33,6 +33,13 @@ h3 {
     font-size: 1.5rem;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+
 .hidden {
     transform: translateX(10000px);
 }
@@ -150,8 +157,8 @@ header {
 
 /****************** HOME ***************************/
 #home {
+    background: transparent;
     padding: 5em 0;
-    background: black;
 }
 #home h2 {
     padding: 12px;
@@ -284,19 +291,27 @@ header {
 #partners-logos {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 2em 0;
-}
-.partner-logo {
-    padding: 1em 30px;
+    margin: 2em 0;
 }
 .partner-logo-img {
-    width: 90%;
+    width: 60%;
+}
+.partner-logo-ftm {
+    width: 45%;
 }
 .partner-logo-xyz {
-    width: 50%;
+    width: 25%;
+}
+.partner-logo-pacemakers {
+    width: 55%;
+}
+.partner-logo-elsewhen {
+    width: 55%;
+    padding-left: 10em;
 }
 
 /***************** BLOG **********************/
@@ -339,14 +354,15 @@ header {
 
 #contact-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .contact-input {
     padding: 0.8em 1em;
 }
 .contact-input input {
-    width: 80vw;
+    width: 40vw;
     height: 40px;
     margin-top: 8px;
     padding: 8px 12px;
@@ -359,10 +375,11 @@ header {
 }
 
 .msg-input {
+    width: 100%;
     padding: 0.8em 1em;
 }
 .msg-input textarea {
-    width: 100%;
+    width: 83vw;
     height: 200px;
     margin-top: 8px;
     padding: 12px 12px;
@@ -413,10 +430,10 @@ footer {
 
 #contact-1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 1em;
+    padding: 20px 3em;
 }
 .contact-phone,
 .contact-email {
@@ -426,9 +443,9 @@ footer {
     align-content: center;
     margin: 10px auto;
     flex-grow: 1;
+    justify-content: flex-start;
 }
 .contact-social {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -453,6 +470,7 @@ footer {
     width: 40px;
     background: #34d5ac;
     border-radius: 50%;
+    margin: 0 0.5em;
 }
 
 #divider {
@@ -463,6 +481,6 @@ footer {
 }
 
 #contact-2 {
-    padding: 20px 2em;
+    padding: 20px 5em;
     text-align: center;
 }
