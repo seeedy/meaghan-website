@@ -216,18 +216,38 @@ header {
 /************ PRINCIPLES ***************************/
 #principles {
     padding: 1em;
+    justify-content: flex-start;
 }
 #principles-ornament {
     height: 60px;
 }
+
 
 .three-principles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em 0;
+    padding: 1em 5em;
+    position: absolute;
+    /* height: 100%; */
+    top: 1700;
+    left: 0;
+    transform: translateX(100%);
+    transition-property: "transform";
+    transition-duration: 0s;
+    background: black;
 }
+.three-principles.onscreen {
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+
+.three-principles.exit {
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
 .principles-number {
     height: 40px;
     width: 40px;
@@ -247,6 +267,26 @@ header {
     font-size: 0.9rem;
 }
 
+#dot-box {
+    position: relative;
+    left: 0;
+    top: 500px;
+    text-align: center;
+    width: 100%;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dot.active {
+    background: white;
+}
 
 /**************** WORK *******************/
 #work {
