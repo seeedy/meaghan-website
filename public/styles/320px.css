@@ -224,6 +224,7 @@ canvas {
 #principles {
     padding: 1em;
 }
+
 #principles-ornament {
     height: 60px;
 }
@@ -235,6 +236,7 @@ canvas {
     align-items: center;
     padding: 1em 0;
 }
+
 .principles-number {
     height: 60px;
     width: 60px;
@@ -248,9 +250,8 @@ canvas {
     margin: 1em;
 }
 
-.principle-headline {
-    color: #34d5ac;
-    padding-bottom: 1em;
+#my-principles {
+    padding-top: 2em;
 }
 
 .principles-text-1 {
@@ -319,19 +320,24 @@ canvas {
     align-items: center;
     padding: 2em 0;
 }
+
 .partner-logo {
     padding: 1em 30px;
 }
+
 .partner-logo-img {
     width: 90%;
 }
+
 .partner-logo-xyz {
     width: 50%;
 }
+
 .partner-logo-pacemakers {
     width: 85%;
     padding: 2em 0;
 }
+
 .partner-logo-elsewhen {
     width: 80%;
     padding: 3em 0;
@@ -365,9 +371,11 @@ canvas {
     flex-direction: row;
     padding-bottom: 1em;
 }
+
 .contact-ornament {
     height: 50px;
 }
+
 .contact-line {
     width: 5em;
     height: 3px;
@@ -380,9 +388,11 @@ canvas {
     flex-direction: column;
     justify-content: center;
 }
+
 .contact-input {
     padding: 0.8em 1em;
 }
+
 .contact-input input {
     width: 80vw;
     height: 40px;
@@ -417,6 +427,7 @@ canvas {
     padding-top: 40px;
     width: 100%;
 }
+
 #submit-btn {
     height: 40px;
     width: 200px;
@@ -427,12 +438,14 @@ canvas {
     text-transform: uppercase;
     cursor: pointer;
 }
+
 #submit-btn p {
     float: left;
     padding: 2px 0 0 66px;
     font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
     letter-spacing: 1px;
 }
+
 .fa-paper-plane {
     padding-right: 2em;
     font-size: 1.5em;

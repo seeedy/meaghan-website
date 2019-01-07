@@ -36,11 +36,19 @@ canvas {
 
 /*************** ABOUT ***************************/
 #about {
-    padding: 0 10em 3em;
+    padding: 0 12em 3em;
 }
 
 #about-text {
     padding: 2em 0;
+}
+
+#about h2 {
+    margin-bottom: 3em;
+}
+
+#about p {
+    margin-bottom: 3em;
 }
 
 /************ PRINCIPLES ***************************/
@@ -69,22 +77,6 @@ canvas {
     transition-duration: 1s;
 }
 
-.principles-number {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #34d5ac;
-    color: black;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.principle-headline {
-    color: #34d5ac;
-    padding-bottom: 1em;
-    font-weight: bold;
-}
 .principles-text-1 {
     font-size: 1rem;
 }
@@ -112,7 +104,6 @@ canvas {
 
 /**************** WORK *******************/
 #work {
-    padding: 0 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,16 +127,6 @@ canvas {
 
 
 /**************** PARTNERS *************************/
-.partners-ornament {
-    height: 60px;
-}
-.partners-line {
-    height: 3px;
-    width: 3em;
-    background: #34d5ac;
-    margin: 0 28px 20px;
-}
-
 #partners-logos {
     width: 100%;
     display: flex;
@@ -158,60 +139,35 @@ canvas {
 .partner-logo-img {
     width: 60%;
 }
+
 .partner-logo-ftm {
     width: 45%;
 }
+
 .partner-logo-xyz {
     width: 25%;
 }
+
 .partner-logo-pacemakers {
     width: 55%;
 }
+
 .partner-logo-img-pacemakers {
     width: 60%;
     margin-right: 7em;
 }
+
 .partner-logo-elsewhen {
     width: 55%;
     padding-left: 10em;
 }
 
 /***************** BLOG **********************/
-#blog-logo {
-    display: flex;
-    flex-direction: row;
-}
-.blog-ornament {
-    height: 60px;
-    margin-top: -20px;
-}
-.blog-line {
-    width: 5em;
-    height: 3px;
-    background: #34d5ac;
-    margin: 0 10px;
-}
+
 
 /**************** CONTACT ********************/
 #contact {
-    background: #f7f7f7;
-    color: #000;
     padding: 2em 10em;
-}
-
-#contact-logo {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1em;
-}
-.contact-ornament {
-    height: 50px;
-}
-.contact-line {
-    width: 5em;
-    height: 3px;
-    background: #34d5ac;
-    margin: 24px 10px;
 }
 
 #contact-form {
@@ -220,66 +176,20 @@ canvas {
     justify-content: center;
     flex-wrap: wrap;
 }
-.contact-input {
-    padding: 0.8em 1em;
-}
+
 .contact-input input {
     width: 38vw;
-    height: 40px;
-    margin-top: 8px;
-    padding: 8px 12px;
-    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
-    font-weight: bold;
-}
-.contact-input input:focus {
-    border: 2px solid #34d5ac;
-    outline: none;
 }
 
 .msg-input {
     width: 100%;
-    padding: 0.8em 1em;
 }
+
 .msg-input textarea {
     width: 80vw;
     height: 160px;
-    margin-top: 8px;
-    padding: 12px 12px;
-    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
-    font-weight: bold;
-    resize: none;
-}
-.msg-input textarea:focus {
-    border: 2px solid #34d5ac;
-    outline: none;
 }
 
-.form-btn-box {
-    padding-top: 40px;
-    width: 100%;
-}
-#submit-btn {
-    height: 40px;
-    width: 200px;
-    border: none;
-    background: #34d5ac;
-    color: #f7f7f7;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-#submit-btn p {
-    float: left;
-    padding: 2px 0 0 66px;
-    font-family: "Open Sans", "Lucida Grande", Arial, sans-serif;
-    letter-spacing: 1px;
-}
-.fa-paper-plane {
-    padding-right: 2em;
-    font-size: 1.5em;
-    float: right;
-    color: white !important;
-}
 /********************* FOOTER **************/
 #contact-1 {
     padding: 20px 6em;
