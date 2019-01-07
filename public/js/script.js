@@ -89,7 +89,6 @@ function hideModal(e) {
                     return;
                 }
                 clearTimeout(timer);
-                console.log(i);
                 move(i);
             });
         });

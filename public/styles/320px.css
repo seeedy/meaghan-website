@@ -33,6 +33,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+canvas {
+    display: none;
+}
+
 .hidden {
     transform: translateX(10000px);
 }
@@ -78,6 +82,7 @@ header {
     cursor: pointer;
 
 }
+
 .fas.fa-bars {
     color: white;
     font-size: 40px;
@@ -164,12 +169,14 @@ header {
     background: #34d5ac;
     margin-top: 20px;
 }
+
 #home-ornament-2 {
     height: 2px;
     width: 170px;
     background: #34d5ac;
     margin-top: 8px;
 }
+
 #home-ornament-3 {
     height: 1px;
     width: 130px;
@@ -298,6 +305,14 @@ header {
 }
 .partner-logo-xyz {
     width: 50%;
+}
+.partner-logo-pacemakers {
+    width: 85%;
+    padding: 2em 0;
+}
+.partner-logo-elsewhen {
+    width: 80%;
+    padding: 3em 0;
 }
 
 /***************** BLOG **********************/
