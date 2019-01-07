@@ -58,7 +58,7 @@ function hideModal(e) {
             if (e.target.classList.contains("exit")) {
                 e.target.classList.remove("exit");
                 // call function again 2.5s after the transition ended
-                timer = setTimeout(move, 5000);
+                timer = setTimeout(move, 15000);
                 inTransition = false;
             }
         });
@@ -95,7 +95,7 @@ function hideModal(e) {
         });
     }
     // call the function for the 1st time
-    setTimeout(move, 5000);
+    setTimeout(move, 15000);
     console.log(i);
 
 })();

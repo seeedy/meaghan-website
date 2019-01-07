@@ -444,6 +444,7 @@ footer {
     justify-content: center;
     align-content: center;
     padding: 10px 0;
+    width: 20%;
 }
 .fa-phone,
 .fa-envelope {
