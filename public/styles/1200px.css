@@ -1,5 +1,6 @@
 
 canvas {
+    background: black;
     display: block;
     position: fixed;
     top: 0;
@@ -60,7 +61,6 @@ canvas {
 .three-principles {
     padding: 1em 10em;
     position: absolute;
-    top: 106em;
     left: 0;
     transform: translateX(100%);
     transition-property: "transform";
@@ -82,9 +82,9 @@ canvas {
 }
 
 #dot-box {
-    position: relative;
+    position: absolute;
     left: 0;
-    top: 25em;
+    top: 90%;
     text-align: center;
     width: 100%;
 }

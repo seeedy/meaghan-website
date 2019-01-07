@@ -223,6 +223,7 @@ canvas {
 /************ PRINCIPLES ***************************/
 #principles {
     padding: 1em;
+    position: relative;
 }
 
 #principles-ornament {
