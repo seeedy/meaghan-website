@@ -26,10 +26,9 @@ var prevScrollPos = window.pageYOffset;
 var header = document.getElementById("header");
 
 window.onscroll = function() {
-    if (window.pageYOffset == 0) {
+    if (window.pageYOffset < 20) {
         header.classList.remove("header-black");
-    }
-    if (window.pageYOffset != 0) {
+    } else {
         header.classList.add("header-black");
     }
 

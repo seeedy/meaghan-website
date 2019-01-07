@@ -148,12 +148,17 @@ canvas {
 }
 
 .nav-social {
+    color: #34d5ac;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #34d5ac;
     padding: 0 2em;
 }
+
+.nav-social a {
+    text-decoration: none;
+}
+
 .nav-social-logo i {
     color: #34d5ac;
     font-size: 2rem;
@@ -486,4 +491,8 @@ footer {
 #contact-2 {
     padding: 20px 2em;
     text-align: center;
+}
+
+.contact-social a {
+    text-decoration: none;
 }
