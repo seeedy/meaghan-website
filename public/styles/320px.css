@@ -236,22 +236,34 @@ canvas {
     padding: 1em 0;
 }
 .principles-number {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background: #34d5ac;
     color: black;
-    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 900;
+    margin: 1em;
 }
+
 .principle-headline {
     color: #34d5ac;
     padding-bottom: 1em;
 }
+
 .principles-text-1 {
     font-size: 0.9rem;
+}
+
+.fa-people-carry,
+.fa-lightbulb {
+    font-size: 26px;
+}
+
+.fa-dharmachakra {
+    font-size: 32px;
 }
 
 
@@ -444,6 +456,7 @@ footer {
     align-items: center;
     padding: 20px 1em;
 }
+
 .contact-phone,
 .contact-email {
     display: flex;
@@ -479,6 +492,7 @@ footer {
     width: 40px;
     background: #34d5ac;
     border-radius: 50%;
+    margin: 0 1em;
 }
 
 #divider {
