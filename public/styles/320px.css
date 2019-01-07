@@ -59,13 +59,18 @@ canvas {
 }
 
 /*************** HEADER ***************/
-header {
+#header {
+    background: transparent;
+    color: white;
     position: fixed;
     top: 0;
-    background: black;
-    color: white;
+    transition: top 0.3s;
     width: 100%;
     z-index: 99;
+}
+
+.header-black {
+    background: black !important;
 }
 
 #header-outer {

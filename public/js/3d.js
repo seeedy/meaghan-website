@@ -15,7 +15,7 @@ var camera, scene, renderer;
 init();
 animate();
 function init() {
-	camera = new THREE.PerspectiveCamera( 80, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 3000 );
+	camera = new THREE.PerspectiveCamera( 70, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 3000 );
 	camera.position.z = 1300;
 	scene = new THREE.Scene();
 	var i, line, material, p;

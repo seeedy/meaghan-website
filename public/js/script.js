@@ -3,7 +3,7 @@ var modal = document.getElementById("modal-outer");
 var x = document.getElementById("nav-x");
 var nav = [].slice.call(document.getElementsByClassName("nav"));
 
-
+/* showing modal on hamburger click, hiding modal on x click */
 hamburger.addEventListener("click", showModal);
 
 nav.forEach(function(elem) {
@@ -21,6 +21,29 @@ function hideModal(e) {
     hamburger.classList.remove("hidden");
 }
 
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollPos = window.pageYOffset;
+var header = document.getElementById("header");
+
+window.onscroll = function() {
+    if (window.pageYOffset == 0) {
+        header.classList.remove("header-black");
+    }
+    if (window.pageYOffset != 0) {
+        header.classList.add("header-black");
+    }
+
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        header.style.top = "0";
+  } else {
+        header.style.top = "-80px";
+  }
+  prevScrollPos = currentScrollPos;
+};
+
+
+/* Carousel on principles page, rotate text boxes every 15sec or on dot click */
 (function() {
     var principles = document.getElementsByClassName("three-principles");
     var dots = document.getElementsByClassName("dot");
@@ -49,7 +72,7 @@ function hideModal(e) {
 
         // change white background on next dot
         dots[i].classList.add("active");
-        // move next img from stack on the right to screen
+        // move next box from stack on the right to screen
         principles[i].classList.add("onscreen");
         console.log(i);
 
@@ -63,21 +86,7 @@ function hideModal(e) {
             }
         });
 
-        // document
-        //     .getElementById("dot-box")
-        //     .addEventListener("click", function(e) {
-        //         if (!e.target.classList.contains("dot")) {
-        //             return;
-        //         }
-        //         for (var i = 0; i < dots.length; i++) {
-        //             if (dots[i] == e.target) {
-        //                 break;
-        //             }
-        //         }
-        //         clearTimeout(timer);
-        //         e.target.classList.add("active");
-        //     });
-
+        /* turn HTML collection into array */
         var dotsArr = [].slice.call(dots);
         dotsArr.forEach(function(d, i) {
             d.addEventListener("click", function(e) {
