@@ -32,7 +32,7 @@ window.onscroll = function() {
         header.classList.add("header-black");
     }
 
-    var currentScrollPos = window.pageYOffset;
+    var currentScrollPos = window.pageYOffset + 5;
     if (prevScrollPos > currentScrollPos) {
         header.style.top = "0";
   } else {
