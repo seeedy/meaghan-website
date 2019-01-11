@@ -173,9 +173,6 @@ canvas {
     padding: 12px;
 }
 
-.hero-div-1 {
-    margin-top: 0.5em;
-}
 
 #home-ornament-1 {
     height: 4px;
@@ -277,14 +274,17 @@ canvas {
 #work {
     padding: 0 1em;
 }
+
 #work-logo {
     display: flex;
     flex-direction: row;
 }
+
 .work-ornament {
     height: 60px;
     margin-top: 20px;
 }
+
 .work-line {
     width: 5em;
     height: 3px;
@@ -299,6 +299,10 @@ canvas {
     flex-direction: column;
     align-items: center;
 }
+.work-box p.break {
+    margin-bottom: 0.5em;
+}
+
 .work-line-2 {
     width: 3em;
     height: 3px;

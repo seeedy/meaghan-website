@@ -13,6 +13,10 @@ canvas {
     background: black;
 }
 
+.hero-div-1 {
+    margin-top: 0.5em;
+}
+
 /*************** ABOUT ***************************/
 #about h2 {
     margin-bottom: 2em;
