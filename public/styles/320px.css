@@ -173,6 +173,10 @@ canvas {
     padding: 12px;
 }
 
+.hero-div-1 {
+    margin-top: 0.5em;
+}
+
 #home-ornament-1 {
     height: 4px;
     width: 210px;
