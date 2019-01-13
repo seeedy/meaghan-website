@@ -11,14 +11,23 @@ nav.forEach(function(elem) {
 });
 
 function showModal(e) {
+
+
+    modal.classList.remove("opaque");
+
     modal.classList.remove("hidden");
+
     hamburger.classList.add("hidden");
     x.addEventListener("click", hideModal);
 }
 
 function hideModal(e) {
-    modal.classList.add("hidden");
+    modal.classList.add("opaque");
     hamburger.classList.remove("hidden");
+    setTimeout(function() {
+        modal.classList.add("hidden");
+    }, 500);
+
 }
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
@@ -30,14 +39,16 @@ window.onscroll = function() {
         header.classList.remove("header-black");
     } else {
         header.classList.add("header-black");
+        var currentScrollPos = window.pageYOffset;
+        console.log('current', currentScrollPos);
+        console.log('prev', prevScrollPos);
+        if (prevScrollPos > currentScrollPos) {
+            header.style.top = "0";
+      } else {
+            header.style.top = "-80px";
+      }
     }
 
-    var currentScrollPos = window.pageYOffset + 5;
-    if (prevScrollPos > currentScrollPos) {
-        header.style.top = "0";
-  } else {
-        header.style.top = "-80px";
-  }
   prevScrollPos = currentScrollPos;
 };
 
