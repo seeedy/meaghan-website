@@ -2,4 +2,4 @@
 
 Professional website for fintech consultant Meaghan Johnson
 
-meaghanjohnson.io
+Link: https://www.meaghanjohnson.io/
