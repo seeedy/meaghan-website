@@ -373,7 +373,6 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-sm);
-    justify-items: center;
     margin-bottom: var(--space-xl);
 }
 
@@ -391,6 +390,7 @@ h4 {
     -webkit-backdrop-filter: blur(4px);
     color: var(--color-teal);
     white-space: nowrap;
+    text-align: center;
 }
 
 .hero-accent {
@@ -1015,7 +1015,7 @@ footer {
     }
 
     .hero-roles {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
         gap: var(--space-md);
     }
 
