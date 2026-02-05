@@ -4,364 +4,291 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" type="text/css"
-            href="/styles/320px.css" />
-        <link rel="stylesheet" type="text/css"
-            media="screen and (min-width: 600px)"
-            href="/styles/600px.css" />
-        <link rel="stylesheet" type="text/css"
-            media="screen and (min-width: 900px)"
-            href="/styles/900px.css" />
-        <link rel="stylesheet" type="text/css"
-            media="screen and (min-width: 1200px)"
-            href="/styles/1200px.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/main.css" />
 
-        <link href="//fonts.googleapis.com/css?family=Barlow+Condensed|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/img/fox-dark.png">
         <title>Meaghan Johnson</title>
     </head>
 
     <body>
-        <!-- nav -->
-        <div id="modal-outer" class="hidden opaque">
-            <div id="modal-inner">
-                <div class="nav-header">
-                    <div class="nav-fox">
-                        <img src="/img/fox.png" class="fox-logo" alt="fox-logo">
-                    </div>
-                    <div id="nav-x">
-                        <i class="fas fa-times"></i>
-                    </div>
-                </div>
-                <div class="nav-main">
-                    <h1><a class="nav" href="#about">About</a></h1>
-                    <h1><a class="nav" href="#principles">Principles</a></h1>
-                    <h1><a class="nav" href="#work">Work</a></h1>
-                    <h1><a class="nav" href="#partners">Partners</a></h1>
-                    <!-- <h1><a class="nav" href="#blog">Blog</a></h1> -->
-                    <h1><a class="nav" href="#contact">Contact</a></h1>
-                </div>
-                <div class="nav-divider"></div>
-                <div class="nav-footer">
-                    <div class="nav-social">
-                        <a href="https://twitter.com/digital_magss" target="_blank">
-                            <div class="nav-social-logo">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/meaghan-johnson-b5506613/" target="_blank">
-                            <div class="nav-social-logo">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-                        </a>
-                        <a href="https://medium.com/@digitalmagss" target="_blank">
-                            <div class="nav-social-logo">
-                                <i class="fab fa-medium-m"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Mobile nav overlay -->
+        <div class="nav-overlay" id="nav-overlay"></div>
 
-        <!-- header -->
+        <!-- Mobile nav panel -->
+        <nav class="nav-panel" id="nav-panel">
+            <div class="nav-panel__header">
+                <img src="/img/fox.png" class="fox-logo" alt="Fox logo">
+                <button class="nav-panel__close" id="nav-close" aria-label="Close navigation">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="nav-panel__links">
+                <a href="#about">About</a>
+                <a href="#principles">Principles</a>
+                <a href="#work">Work</a>
+                <a href="#partners">Partners</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-panel__social">
+                <a href="https://twitter.com/digital_magss" target="_blank" rel="noopener">
+                    <div class="nav-panel__social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/meaghan-johnson-b5506613/" target="_blank" rel="noopener">
+                    <div class="nav-panel__social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+                <a href="https://medium.com/@digitalmagss" target="_blank" rel="noopener">
+                    <div class="nav-panel__social-icon">
+                        <i class="fab fa-medium-m"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Header -->
         <header id="header">
             <div id="header-outer">
                 <div class="header-fox">
-                    <img src="/img/fox.png" class="fox-logo" alt="fox-logo">
+                    <img src="/img/fox.png" class="fox-logo" alt="Fox logo">
                 </div>
 
-                <div id="hamburger">
+                <nav class="header-nav">
+                    <a href="#about">About</a>
+                    <a href="#principles">Principles</a>
+                    <a href="#work">Work</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <button id="hamburger" aria-label="Open navigation">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </div>
         </header>
 
-        <!-- body / home -->
-        <div id="scroll-box">
-
-            <div id="home" class="one-page">
-                <div id="home-text">
-                    <h1>Digital Magss</h1>
-                    <h2>Customer experience and strategy consultancy for banks, startups and company builders</h2>
-                    <h2>
-                        <div class="hero-div-1">Fintech Researcher </div>
-                        <div class="hero-div-1">Customer Journey Expert </div>
-                        <div class="hero-div-1">Strategy Consultant </div>
-                        <div class="hero-div-1">UX Design</div>
-                    </h2>
+        <!-- Hero -->
+        <section id="home" class="section section--dark">
+            <div id="home-text">
+                <h1>Digital Magss</h1>
+                <h2>Customer experience and strategy consultancy for banks, startups and company builders</h2>
+                <div class="hero-roles" data-reveal>
+                    <span class="hero-pill">Fintech Researcher</span>
+                    <span class="hero-pill">Customer Journey Expert</span>
+                    <span class="hero-pill">Strategy Consultant</span>
+                    <span class="hero-pill">UX Design</span>
                 </div>
-                    <div id="home-ornament-1"></div>
-                    <div id="home-ornament-2"></div>
-                    <div id="home-ornament-3"></div>
+                <div class="hero-accent"></div>
             </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
 
-            <div id="about" class="one-page">
-                <div id="about-logo">
-                    <div class="about-line"></div>
-                    <div id="bloom-div"><image id="bloom-ornament"src="/img/bloom_200.svg"></div>
-                    <div class="about-line"></div>
+        <!-- About -->
+        <section id="about" class="section section--light">
+            <div class="section-header" data-reveal>
+                <img class="section-header__ornament" src="/img/bloom_200.svg" alt="">
+                <h2>About</h2>
+                <div class="section-header__accent"></div>
+            </div>
+            <div class="section__container" data-reveal>
+                <div class="about-pullquote">
+                    Hello! I'm Meaghan and I help banks, fintechs and company builders create innovative digital customer experiences by providing deep insights that explore the competitor landscape, customer nuances and technology trends.
                 </div>
-                <div id="about-text">
-                    <div id="about-1">
-                        <h2>Hello! I'm Meaghan and I help banks, fintechs and company builders create innovative digital customer experiences by providing deep insights that explore the competitor landscape, customer nuances and technology trends.</h2>
-
-                    </div>
-                    <div id="about-2">
-                        <p>I am a fintech generalist and have launched research platforms, designed mobile customer experiences, conducted customer testing, facilitated bank and fintech partnerships and demystified emerging technologies for banks. </p>
-                        </br>
-                        <p>I have eight years experience in the London and Berlin digital financial services sector and I have worked with over 30 financial service companies globally.</p>
-                    </div>
-                </div>
-                <div class="flourish-div">
-                    <image id="flourish-ornament" src="/img/flourish_250.svg">
+                <div class="about-body">
+                    <p>I am a fintech generalist and have launched research platforms, designed mobile customer experiences, conducted customer testing, facilitated bank and fintech partnerships and demystified emerging technologies for banks.</p>
+                    <p>I have eight years experience in the London and Berlin digital financial services sector and I have worked with over 30 financial service companies globally.</p>
                 </div>
             </div>
+        </section>
 
-            <div id="principles" class="one-page">
-                <div id="pinciples-headline">
-                    <image id="principles-ornament" src="/img/principles_250.svg">
-                    <h2>Principles</h2>
-                </div>
-                <div id="principles-text">
-                    <div id="carousel">
-                    <div id="principles-1">
-                        <div id="my-principles">
-                            <h4>My research and advice is based on the belief that truly innovative digital customer experiences are based on three principles</h4>
+        <!-- Principles -->
+        <section id="principles" class="section section--dark">
+            <div class="section-header" data-reveal>
+                <img class="section-header__ornament" src="/img/principles_250.svg" alt="">
+                <h2>Principles</h2>
+                <div class="section-header__accent"></div>
+            </div>
+            <div class="section__container">
+                <p class="lead principles-intro" data-reveal>My research and advice is based on the belief that truly innovative digital customer experiences are based on three principles</p>
+                <div class="principles-grid" data-reveal-stagger>
+                    <div class="principle-card">
+                        <div class="principle-card__icon">
+                            <i class="fas fa-lightbulb"></i>
                         </div>
-                        <div class="three-principles onscreen">
-                            <div class="principles-number">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                                <div class="principle-headline">
-                                    Apply the Jobs to be Done Framework
-                                </div>
-                                <div class="work-line-2"></div>
-                                <div class="principles-text-1">
-                                    <p>Innovation comes from understanding why a user starts a job and how they complete it. Using The Job to be Done Framework uncovers pockets of innovation in existing tasks, but also leads to new products and services which typically solve pain points in complete tasks. This is done by focusing on the why and how rather than the who is doing the job (a persona approach).</p>
-                                    <p>Applying this framework to CX development in financial services requires deep engagement with customers and markets. Building a bank for freelancers? Spend two days with freelancers to understand where they are spending excessive time on a task. Building a bank for expats? Identify the non-banking challenges associated with relocation and look to create a complementary digital service to your mobile app.</p>
-                                </div>
+                        <h3>Apply the Jobs to be Done Framework</h3>
+                        <p>Innovation comes from understanding why a user starts a job and how they complete it. Using The Job to be Done Framework uncovers pockets of innovation in existing tasks, but also leads to new products and services which typically solve pain points in complete tasks. This is done by focusing on the why and how rather than the who is doing the job (a persona approach).</p>
+                        <p>Applying this framework to CX development in financial services requires deep engagement with customers and markets. Building a bank for freelancers? Spend two days with freelancers to understand where they are spending excessive time on a task. Building a bank for expats? Identify the non-banking challenges associated with relocation and look to create a complementary digital service to your mobile app.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-card__icon">
+                            <i class="fas fa-people-carry"></i>
                         </div>
-                        <div class="three-principles">
-                            <div class="principles-number">
-                                <i class="fas fa-people-carry"></i>
-                            </div>
-                                <div class="principle-headline">Understanding cultural nuances will ensure experiences are relevant
-                                </div>
-                                <div class="work-line-2"></div>
-                                <div class="principles-text-1">
-                                    <p>Understanding cultural nuances, for example how likely are customers to re-sell goods on platforms such as Shpock, how important is traveling for millenials, or if cash is still king (or queen), can serve as key factors in creating relevant customer experiences.
-                                    The rise of fintechs, open API adoption and a greater propensity to collaborate across sectors has created an environment where fast and new  product and service development is becoming standard within financial services. On the other hand, product, strategy and innovation teams are faced with pressure to replicate success in other markets and are flooded with ideas and opportunities.
-                                    </p>
-                                </div>
+                        <h3>Understanding cultural nuances will ensure experiences are relevant</h3>
+                        <p>Understanding cultural nuances, for example how likely are customers to re-sell goods on platforms such as Shpock, how important is traveling for millenials, or if cash is still king (or queen), can serve as key factors in creating relevant customer experiences. The rise of fintechs, open API adoption and a greater propensity to collaborate across sectors has created an environment where fast and new product and service development is becoming standard within financial services. On the other hand, product, strategy and innovation teams are faced with pressure to replicate success in other markets and are flooded with ideas and opportunities.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-card__icon">
+                            <i class="fas fa-dharmachakra"></i>
                         </div>
-                        <div class="three-principles">
-                            <div class="principles-number">
-                                <i class="fas fa-dharmachakra"></i>
-                            </div>
-                                <div class="principle-headline">Don't reinvent the wheel, learn from your competitors and leaders in other industries
-                                </div>
-                                <div class="work-line-2"></div>
-                                <div class="principles-text-1">
-                                    <p>There are hundreds of inspirational fintechs, banks, technology companies, loyalty providers, etc. that have developed and launched something that can provide inspiration and shed insight. Sourcing and understanding such initiatives can create both a more time effective and innovative customer experience. Knowing what to mimic and where to look to for inspiration (and which) is key for innovationing quickly.
-                                    </p>
-                                </div>
-                        </div>
-                    </div>
-                    <div id="dot-box">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div id="work" class="one-page">
-                <div id="work-headline">
-                    <div id="work-logo">
-                        <div class="work-line"></div>
-                        <image class="work-ornament" src="/img/work_200.svg">
-                        <div class="work-line"></div>
-                    </div>
-
-                    <h2>Work</h2>
-                </div>
-                <div class="work-box">
-                    <h3>Research</br> and Consulting</h3>
-                    <div class="work-line-2"></div>
-                    <p>Whether it be helping you understand your competitors' digital journeys, providing inspiration of digital best practices, identifying fintechs of strategic interest, or exploring the potential of emerging technology such as blockchain and decentralised marketplaces, I can quickly produce deliverables to meet your business requirements. My research is consultative in nature, as I work to understand the implication for you, your team and the business. </p>
-                </div>
-                <div class="work-box">
-                    <h3>Product</br> Development</h3>
-                    <div class="work-line-2"></div>
-                    <p>I support startups, banks and company builders in the early stages of product development. This includes facilitating ideation workshops, showing best practice journeys from leading brands, and microsite creation and customer testing (ethnography, depth interviews, focus groups and surveys). I have created and launched end to end mobile customer experiences in both fiat and crypto banking, including wireframing, storyboarding and customer testing. </p>
-                </div>
-                <div class="work-box">
-                    <h3>Speaking</br> Engagements</h3>
-                    <div class="work-line-2"></div>
-                    <p class="break">I keynote and moderate events around the world. My recent keynote speeches include:</p>
-
-                    <p>Fintech Matters Summit 2018 (Vienna, Austria)</p>
-                    <p class="break"><em>"Evolving Ecosystems: The changing relationship between banks and fintechs"</em></p>
-
-                    <p>EFMA 46th World Congress: Digital Transformation (Lisbon, Portugal)</p>
-                    <p class="break">Co-chair</p>
-
-                    <p>Fintech Matters and Finance Innovate: Connecting the European FinTech Ecosystems (Bergen, Norway)</p>
-                    <p class="break"><em>"Exceptional Customer Experiences"</em></p>
-
-                    <p>CR2 Digital Banking Conference 2018 (Dubai, UAE)</p>
-                    <p class="break"><em>"The Importance of Mobile: What does an exceptional customer experience look like and how can we achieve this?"</em></p>
-
-                    <p>API Days 2017 (Berlin, Germany)</p>
-                    <p><em>"Winning customer journeys: Who has already capitalised on open banking and what does this mean for customers?"</em>
-                    </p>
-                </div>
-                <div class="work-box">
-                    <h3>Fintech<br> Tours</h3>
-                    <div class="work-line-2"></div>
-                    <p>I tap into my global network of fintechs, experts and accelerators to curate fintech tours. These tours are typically targeted towards banking or corporate executives who are looking to meet fellow bankers to gain inspiration, meet fintechs of strategic interest and understand why certain cities are hubs in digital financial services.
-                    </p>
-                </div>
-            </div>
-
-            <div id="partners" class="one-page">
-                <div class="partners-headline">
-                    <image class="partners-ornament" src="/img/partners_200.svg">
-                    <div class="partners-line"></div>
-                    <h2>Partners</h2>
-                </div>
-
-                <div id="partners-logos">
-
-
-                    <div class="partner-logo-ftm">
-                        <a href="https://www.fintechmatters.org/" target="_blank">
-                        <img class="partner-logo-img" src="/img/FTM_LOGO_18_1Z_white_hq.png" alt="">
-                        </a>
-                    </div>
-
-                    <div class="partner-logo-pacemakers">
-                        <a href="https://www.pacemakers.io/" target="_blank">
-                        <img class="partner-logo-img-pacemakers" src="/img/Logo-white.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="partner-logo-xyz">
-                        <a href="https://www.jigsaw.xyz/" target="_blank">
-                        <img class="partner-logo-img" src="/img/xyzwhite.png" alt="">
-                        </a>
-                    </div>
-
-                    <div class="partner-logo-elsewhen">
-                        <a href="https://www.elsewhen.com/" target="_blank">
-                        <img class="partner-logo-img" src="/img/Elsewhen_Wordmark_White_Large.png" alt="">
-                        </a>
+                        <h3>Don't reinvent the wheel, learn from your competitors and leaders in other industries</h3>
+                        <p>There are hundreds of inspirational fintechs, banks, technology companies, loyalty providers, etc. that have developed and launched something that can provide inspiration and shed insight. Sourcing and understanding such initiatives can create both a more time effective and innovative customer experience. Knowing what to mimic and where to look to for inspiration (and which) is key for innovationing quickly.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- <div id="blog" class="one-page">
-                <div id="contact-headline">
-                    <div id="blog-logo">
-                        <div class="blog-line"></div>
-                        <image class="blog-ornament" src="/img/blog_200.svg">
-                        <div class="blog-line"></div>
+        <!-- Work -->
+        <section id="work" class="section section--dark">
+            <div class="section-header" data-reveal>
+                <img class="section-header__ornament" src="/img/work_200.svg" alt="">
+                <h2>Work</h2>
+                <div class="section-header__accent"></div>
+            </div>
+            <div class="section__container">
+                <div class="work-grid" data-reveal-stagger>
+                    <div class="work-card">
+                        <h3>Research &amp; Consulting</h3>
+                        <div class="work-card__accent"></div>
+                        <p>Whether it be helping you understand your competitors' digital journeys, providing inspiration of digital best practices, identifying fintechs of strategic interest, or exploring the potential of emerging technology such as blockchain and decentralised marketplaces, I can quickly produce deliverables to meet your business requirements. My research is consultative in nature, as I work to understand the implication for you, your team and the business.</p>
                     </div>
-                    <h2>Blog</h2>
-                </div>
-                Blog page content goes here.
-            </div> -->
-
-            <div id="contact" class="one-page">
-                <div id="contact-headline">
-                    <div id="contact-logo">
-                        <div class="contact-line"></div>
-                        <image class="contact-ornament" src="/img/contact_200.svg">
-                        <div class="contact-line"></div>
+                    <div class="work-card">
+                        <h3>Product Development</h3>
+                        <div class="work-card__accent"></div>
+                        <p>I support startups, banks and company builders in the early stages of product development. This includes facilitating ideation workshops, showing best practice journeys from leading brands, and microsite creation and customer testing (ethnography, depth interviews, focus groups and surveys). I have created and launched end to end mobile customer experiences in both fiat and crypto banking, including wireframing, storyboarding and customer testing.</p>
                     </div>
-                    <h2>Get in touch</h2>
-                </div>
-                    <div id="contact-box">
-
-                        <form id="contact-form" action="https://formspree.io/digitalmagss@gmail.com" method="POST">
-                            <div class="contact-input">
-                                <label for="name"><h3>Name:</h3></label>
-                                <input type="text" name="name" required placeholder="REQUIRED">
-                            </div>
-                            <div class="contact-input">
-                                <label for="email"><h3>Email:</h3></label>
-                                <input type="text" name="_replyto" required placeholder="REQUIRED">
-                            </div>
-                            <div class="contact-input">
-                                <label for="company"><h3>Company name:</h3></label>
-                                <input type="text" name="company" required placeholder="REQUIRED">
-                            </div>
-                            <div class="contact-input">
-                                <label for="phone"><h3>Telephone number:</h3></label>
-                                <input type="text" name="phone" required placeholder="REQUIRED">
-                            </div>
-                            <div class="msg-input">
-                                <label for="msg"><h3>Other details:</h3></label>
-                                <textarea name="msg" required placeholder="TYPE YOUR MESSAGE HERE"></textarea>
-                            </div>
-                            <div class="form-btn-box">
-                                <button id="submit-btn" type="submit" value="send">
-                                    <p>send</p>
-                                    <i class="fas fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </form>
-
+                    <div class="work-card">
+                        <h3>Speaking Engagements</h3>
+                        <div class="work-card__accent"></div>
+                        <p class="break">I keynote and moderate events around the world. My recent keynote speeches include:</p>
+                        <p>Fintech Matters Summit 2018 (Vienna, Austria)</p>
+                        <p class="break"><em>"Evolving Ecosystems: The changing relationship between banks and fintechs"</em></p>
+                        <p>EFMA 46th World Congress: Digital Transformation (Lisbon, Portugal)</p>
+                        <p class="break">Co-chair</p>
+                        <p>Fintech Matters and Finance Innovate: Connecting the European FinTech Ecosystems (Bergen, Norway)</p>
+                        <p class="break"><em>"Exceptional Customer Experiences"</em></p>
+                        <p>CR2 Digital Banking Conference 2018 (Dubai, UAE)</p>
+                        <p class="break"><em>"The Importance of Mobile: What does an exceptional customer experience look like and how can we achieve this?"</em></p>
+                        <p>API Days 2017 (Berlin, Germany)</p>
+                        <p><em>"Winning customer journeys: Who has already capitalised on open banking and what does this mean for customers?"</em></p>
+                    </div>
+                    <div class="work-card">
+                        <h3>Fintech Tours</h3>
+                        <div class="work-card__accent"></div>
+                        <p>I tap into my global network of fintechs, experts and accelerators to curate fintech tours. These tours are typically targeted towards banking or corporate executives who are looking to meet fellow bankers to gain inspiration, meet fintechs of strategic interest and understand why certain cities are hubs in digital financial services.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- footer -->
+        <!-- Partners -->
+        <section id="partners" class="section section--dark">
+            <div class="section-header" data-reveal>
+                <img class="section-header__ornament" src="/img/partners_200.svg" alt="">
+                <h2>Partners</h2>
+                <div class="section-header__accent"></div>
+            </div>
+            <div class="section__container">
+                <div class="partners-grid" data-reveal-stagger>
+                    <a class="partner-logo" href="https://www.fintechmatters.org/" target="_blank" rel="noopener">
+                        <img src="/img/FTM_LOGO_18_1Z_white_hq.png" alt="Fintech Matters" loading="lazy">
+                    </a>
+                    <a class="partner-logo" href="https://www.pacemakers.io/" target="_blank" rel="noopener">
+                        <img src="/img/Logo-white.svg" alt="Pacemakers" loading="lazy">
+                    </a>
+                    <a class="partner-logo" href="https://www.jigsaw.xyz/" target="_blank" rel="noopener">
+                        <img src="/img/xyzwhite.png" alt="Jigsaw XYZ" loading="lazy">
+                    </a>
+                    <a class="partner-logo" href="https://www.elsewhen.com/" target="_blank" rel="noopener">
+                        <img src="/img/Elsewhen_Wordmark_White_Large.png" alt="Elsewhen" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section--light">
+            <div class="section-header" data-reveal>
+                <img class="section-header__ornament" src="/img/contact_200.svg" alt="">
+                <h2>Get in touch</h2>
+                <div class="section-header__accent"></div>
+            </div>
+            <div class="section__container" data-reveal>
+                <form id="contact-form" action="https://formspree.io/digitalmagss@gmail.com" method="POST">
+                    <div class="contact-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="contact-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="your@email.com">
+                    </div>
+                    <div class="contact-input">
+                        <label for="company">Company name</label>
+                        <input type="text" id="company" name="company" required placeholder="Your company">
+                    </div>
+                    <div class="contact-input">
+                        <label for="phone">Telephone number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+49 123 456 789">
+                    </div>
+                    <div class="msg-input">
+                        <label for="msg">Other details</label>
+                        <textarea id="msg" name="msg" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <div class="form-btn-box">
+                        <button id="submit-btn" type="submit" value="send">
+                            <span>Send</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer>
-            <div id="contact-1">
-                <div class="contact-phone">
-                    <div class="contact-icon">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
                         <i class="fas fa-phone"></i>
+                        <span>+49 (0) 177 706 1368</span>
                     </div>
-                    <p>+49 (0) 177 706 1368</p>
-                </div>
-                <div class="contact-email">
-                    <div class="contact-icon">
+                    <div class="footer-contact-item">
                         <i class="fas fa-envelope"></i>
+                        <a href="mailto:digitalmagss@gmail.com">digitalmagss@gmail.com</a>
                     </div>
-                    <a href="mailto:digitalmagss@gmail.com">digitalmagss@gmail.com</a>
                 </div>
-                <div class="contact-social">
-                    <a href="https://twitter.com/digital_magss" target="_blank">
-                        <div class="social-logo">
+                <div class="footer-social">
+                    <a href="https://twitter.com/digital_magss" target="_blank" rel="noopener">
+                        <div class="social-icon">
                             <i class="fab fa-twitter"></i>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/meaghan-johnson-b5506613/" target="_blank">
-                        <div class="social-logo">
+                    <a href="https://www.linkedin.com/in/meaghan-johnson-b5506613/" target="_blank" rel="noopener">
+                        <div class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                     </a>
-                    <a href="https://medium.com/@digitalmagss" target="_blank">
-                        <div class="social-logo">
+                    <a href="https://medium.com/@digitalmagss" target="_blank" rel="noopener">
+                        <div class="social-icon">
                             <i class="fab fa-medium-m"></i>
                         </div>
                     </a>
-
                 </div>
-            </div>
-            <div id="divider"></div>
-            <div id="contact-2">
-                <p>Meaghan Johnson | Blücherstr. 3 | 10961 Berlin</p>
+                <div class="footer-address">
+                    <p>Meaghan Johnson | Blücherstr. 3 | 10961 Berlin</p>
+                </div>
             </div>
         </footer>
 
         <script src="/js/script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.js">
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.js"></script>
         <script src="/js/WebGL.js"></script>
         <script src="/js/3d.js"></script>
     </body>
